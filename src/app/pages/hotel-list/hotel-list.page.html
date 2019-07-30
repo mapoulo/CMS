@@ -1,0 +1,33 @@
+<ion-content>
+<div class="container">
+
+
+  <!-- <div class="cont" let *ngFor = "let item of array">
+    <div class="one">
+    <img src="{{item.image}}" alt="">
+    </div>
+    <div class="two"></div>
+  </div> -->
+
+  <div class="content">
+    <div class="one">
+
+        <ion-card *ngFor="let room of getRooms;">
+            <img src="{{room.image}}" alt="my_rooms" class="images">
+            <ion-card-content>
+              <ion-card-title>
+                  {{room.RoomType}}
+                </ion-card-title>
+                <p>Price :R{{room.Price}}</p>
+              <p>
+                  {{room.Description}}
+              </p>
+            </ion-card-content>  
+          </ion-card>
+    </div>
+  
+  </div>
+ 
+  
+</div>
+</ion-content>
